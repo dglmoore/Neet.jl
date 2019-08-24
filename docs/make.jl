@@ -3,10 +3,11 @@ using Neet
 
 makedocs(
     sitename = "Neet",
-    format = :html,
+    format = Documenter.HTML(),
     modules = [Neet],
-    pages = [
-        "index.md",
+    authors="Harrison Smith and Douglas G. Moore",
+    pages = Any[
+        "Home" => "index.md",
         "core.md"
     ]
 )
