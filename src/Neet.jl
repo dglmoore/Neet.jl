@@ -3,10 +3,13 @@ module Neet
 # provides the @unimpl macro
 include("macros.jl")
 
-# provides the Abstract interfaces
+# provides the AbstractNetwork interface
 include("core.jl")
 
-# provides the state space types
+# provides the AbstractStateSpace interface
 include("statespace.jl")
+
+# provides the Boolean state space implementation
+include("boolean/statespace.jl")
 
 end
